@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "no-more-deepslate",
+	"version": "${version}",
+	"name": "No More Deepslate",
+	"description": "Removes deepslate from the default terrain generation.",
+	"authors": [
+		"herrobriam"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no-more-deepslate/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.herrobriam.nomoredeepslate.NoMoreDeepslate"
+		],
+		"fabric-datagen": [
+			"net.herrobriam.nomoredeepslate.NoMoreDeepslateDataGenerator"
+		]
+	},
+	"mixins": [
+		"no-more-deepslate.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": ">=1.19",
+		"java": ">=11"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
